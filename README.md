@@ -23,7 +23,7 @@ As the project progresses, the following files and directories will be added:
 * **`Diagrams/`**: Visual models (e.g., Use Case Diagram, Activity Diagrams).
 * **`Acceptance_Criteria.md`**: Specific criteria for feature validation.
 
----
+
 
 ## Why is Requirement Analysis Important?
 
@@ -46,3 +46,23 @@ Requirement Analysis is the **cornerstone of successful software development** b
 * **Reduces Development Errors:** A well-defined requirement acts as a precise target. Without it, development teams might build the wrong product, leading to costly rework.
 * **Facilitates Accurate Planning:** It provides the necessary input for project managers to create reliable estimates for cost, time, and resources.
 * **Establishes Acceptance Criteria:** The documented requirements form the basis for testing and quality assurance, ensuring the final product meets the client's expectations.
+
+## Key Activities in Requirement Analysis
+
+Requirement Analysis is not a single action but a structured process involving several interdependent activities to ensure a clear and complete understanding of the system's needs.
+
+1.**Requirement Gathering:**
+This initial, broad phase involves identifying all stakeholders and determining the overall high-level scope and goals of the project. It focuses on the 'Why' and 'What' of the project from a business perspective.
+
+2.**Requirement Elicitation:**
+This is the targeted act of drawing out detailed, specific requirements from stakeholders using various techniques. Methods include interviews, workshops (JAD sessions), surveys, prototyping, and observation of current processes. This phase is crucial for bridging the gap between a user's abstract need and a system's tangible specification.
+
+3.**Requirement Documentation:**
+This phase involves formally recording all confirmed and analyzed requirements in a structured format, typically resulting in a Software Requirements Specification (SRS) document. Documentation ensures that requirements are stored, managed, and accessible, acting as the single source of truth for the project team.
+
+4.**Requirement Analysis and Modeling:**
+Once documented, requirements are systematically analyzed for conflicts, ambiguities, completeness, and feasibility. Modeling uses visual techniques—such as Use Case Diagrams, Class Diagrams, or Activity Diagrams—to represent the system's structure and behavior, ensuring a shared, unambiguous understanding among technical and non-technical team members.
+
+5.**Requirement Validation:**
+The final critical step is to verify the documented requirements against the original business objectives. This is done through reviews, inspections, and walk-throughs with stakeholders to ensure the requirements are correct, testable, and truly solve the identified business problem. This activity prevents building the "wrong" system.
+
