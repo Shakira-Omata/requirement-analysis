@@ -104,3 +104,59 @@ Examples for the Booking Management System:
 **Reliability (Uptime):** The system must maintain 99.9% uptime, excluding scheduled maintenance windows.
 
 **Maintainability:** New resource types or pricing models must be configurable by administrators without requiring code changes or system downtime.
+
+
+
+
+## Acceptance Criteria
+
+Acceptance Criteria (AC) are a set of predefined conditions that a software feature or functional requirement must satisfy to be accepted as complete by the customer or stakeholder. They are formal, testable statements that define the "done" state of a feature.
+
+Importance in Requirement Analysis
+
+Defines "Done": ACs eliminate ambiguity by providing a clear, objective, and binary (pass/fail) definition of when a requirement is considered complete and functional, moving beyond subjective interpretation.
+
+**Aligns Stakeholders:** They ensure that the development team, QA team, and business stakeholders all share the exact same understanding of the expected outcome and boundaries of the feature.
+
+**Drives Testing:** They are the primary input for quality assurance (QA). Every Acceptance Criterion must be testable, directly forming the basis for test cases.
+
+**Prevents Scope Creep:** By specifying what is included, ACs also help clarify what is not included in the feature, managing expectations and preventing scope drift.
+
+Example for the Checkout Feature
+
+Acceptance criteria are often written using the Gherkin syntax (Given-When-Then), which describes the scenario, the action, and the result.
+
+Feature: Booking Checkout and Payment (FR3)
+
+Scenario
+
+Given (Initial Context)
+
+When (Action Performed)
+
+Then (Expected Result)
+
+Successful Payment
+
+The user is on the checkout page with a reserved slot and provides valid payment details
+
+The user clicks the "Confirm Booking and Pay" button
+
+The system processes the payment, displays a "Booking Confirmed" message, and sends an immediate email confirmation to the user.
+
+Insufficient Funds
+
+The user provides payment details associated with insufficient funds
+
+The payment gateway returns an 'Insufficient Funds' error
+
+The system displays a transactional error message: "Payment Failed: Insufficient Funds. Please try another method." and keeps the resource reserved for 10 minutes.
+
+Simultaneous Booking Failure
+
+The user clicks "Pay" for a slot that was just booked by another user
+
+The system attempts to process the booking and detects the resource lock
+
+The system cancels the transaction and displays a message: "Error: This resource is no longer available. Please select a different time."
+
