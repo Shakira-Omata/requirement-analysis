@@ -66,3 +66,41 @@ Once documented, requirements are systematically analyzed for conflicts, ambigui
 5.**Requirement Validation:**
 The final critical step is to verify the documented requirements against the original business objectives. This is done through reviews, inspections, and walk-throughs with stakeholders to ensure the requirements are correct, testable, and truly solve the identified business problem. This activity prevents building the "wrong" system.
 
+## Types of Requirements 
+
+Requirements are broadly classified into two categories, reflecting the "what" (functionality) and the "how" (quality) of the system.
+
+## Functional Requirements (FRs)
+
+Functional Requirements define the specific functions or services the system must perform. They describe the behavior of the system, often in terms of inputs, process, and outputs. They are generally actionable and directly map to user stories.
+
+Examples for the Booking Management System:
+
+**User Authentication:** The system must allow a user to register, log in, and log out securely.
+
+**Search Availability:** The system must allow a user to search for bookable resources (e.g., meeting rooms, appointments, vehicles) based on date, time, and type.
+
+**Booking Creation:** The system must allow a logged-in user to select an available slot and confirm a booking after providing necessary details (e.g., purpose, attendees).
+
+**Confirmation and Notification:** The system must automatically send an email confirmation to the user and the resource provider upon successful booking.
+
+**Cancellation Logic:** The system must allow a user to cancel a booking up to 24 hours before the scheduled time, automatically freeing up the resource.
+
+**Admin Management:** The system must allow an administrator to add, edit, or remove bookable resources and manage user roles.
+
+Non-functional Requirements (NFRs)
+
+Non-functional Requirements define the quality attributes or constraints that the system must satisfy. They specify how well the system performs its functions, often covering aspects like performance, security, reliability, and usability. They are generally measurable.
+
+Examples for the Booking Management System:
+
+**Performance (Response Time):** The search results page must display within 1.5 seconds under normal load conditions.
+**Security (Data Protection):** All personally identifiable information (PII) and payment details must be encrypted both in transit (using HTTPS) and at rest (in the database).
+
+**Scalability:** The system must be able to process 5,000 concurrent booking requests during peak hours (e.g., first day of the month) without degradation of service.
+
+**Usability (Accessibility):** The booking interface must conform to WCAG 2.1 AA accessibility standards.
+
+**Reliability (Uptime):** The system must maintain 99.9% uptime, excluding scheduled maintenance windows.
+
+**Maintainability:** New resource types or pricing models must be configurable by administrators without requiring code changes or system downtime.
